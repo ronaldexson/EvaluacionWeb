@@ -2,10 +2,7 @@ package com.nttdata.steps;
 
 import com.nttdata.page.TiendaMyStorePage;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -55,11 +52,13 @@ public class TiendaMyStoreStep {
         btnLogin.click();
 
 
-
-
-
-
-
+        try {
+            // Intentar encontrar el elemento usando XPath
+            WebElement validoLogin = driver.findElement(TiendaMyStorePage.validoLogin);
+            throw new RuntimeException("Login no valido");
+        } catch (NoSuchElementException e) {
+            // Si el elemento no se encuentra, se captura la excepción
+        }
 
     }
 

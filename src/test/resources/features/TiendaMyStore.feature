@@ -14,6 +14,6 @@ Entonces valido el titulo de la pagina del carrito
 Y vuelvo a validar el calculo de precios en el carrito
     Ejemplos:
       | user                     | clave          | cantidad | categoria | subCategoria |
-      | ronald_exson@hotmail.com | formulario1234 | 5        | CLOTHES   | Men          |
+      | ronald_exson@hotmail.com | formulario1234 | 2        | CLOTHES   | Men          |
       | ronald_exson@hotmail.com | incorrecto4    | 5        | CLOTHES   | Men          |
       | ronald_exson@hotmail.com | formulario1234 | 5        | Auto      | Men          |
